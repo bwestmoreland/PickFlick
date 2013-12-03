@@ -8,6 +8,7 @@
 
 @interface RateMovieViewController : UIViewController
 
+@property (strong, nonatomic) UITextField *movieInquiryTextField;
 
 
 @end
