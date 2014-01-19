@@ -7,7 +7,7 @@
 //
 
 #import "MovieDetailsViewController.h"
-#import "Appearance.h"
+#import "UIColor+CustomColors.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIAlertView+SimpleAlert.h"
 #import "Movie.h"
@@ -33,8 +33,8 @@
 
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [Appearance whiteColor];
-    self.scrollView.backgroundColor = [Appearance whiteColor];
+    self.view.backgroundColor = [UIColor creamColor];
+    self.scrollView.backgroundColor = [UIColor creamColor];
     [self.scrollView addSubview: self.posterView];
     [self.scrollView addSubview: self.releaseDateHeaderLabel];
     [self.scrollView addSubview: self.releaseDateLabel];
@@ -53,7 +53,7 @@
 
 - (void)drawDebugOutlineAroundView: (UIView *)view
 {
-    view.layer.borderColor = [Appearance darkBlueColor].CGColor;
+    view.layer.borderColor = [UIColor darkBlueColor].CGColor;
     view.layer.borderWidth = 1.0;
 }
 

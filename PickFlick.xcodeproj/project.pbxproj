@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B47DB9A188C03E0008A8E21 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B47DB99188C03E0008A8E21 /* UIColor+CustomColors.m */; };
 		2B74AC221846BFCF00497323 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B74AC211846BFCF00497323 /* Foundation.framework */; };
 		2B74AC241846BFD000497323 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B74AC231846BFD000497323 /* CoreGraphics.framework */; };
 		2B74AC261846BFD000497323 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B74AC251846BFD000497323 /* UIKit.framework */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B47DB98188C03E0008A8E21 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		2B47DB99188C03E0008A8E21 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
 		2B74AC1E1846BFCF00497323 /* PickFlick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickFlick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B74AC211846BFCF00497323 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B74AC231846BFD000497323 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +112,8 @@
 			children = (
 				2BBC263E1846C12900A33D0D /* Appearance.h */,
 				2BBC263F1846C12900A33D0D /* Appearance.m */,
+				2B47DB98188C03E0008A8E21 /* UIColor+CustomColors.h */,
+				2B47DB99188C03E0008A8E21 /* UIColor+CustomColors.m */,
 				2BBC26401846C12900A33D0D /* ChooseMovieViewController.h */,
 				2BBC26411846C12900A33D0D /* ChooseMovieViewController.m */,
 				2BBC26421846C12900A33D0D /* Movie.h */,
@@ -215,6 +220,7 @@
 			files = (
 				2B74AC581846C02900497323 /* UILabel+AppearanceProxy.m in Sources */,
 				2BBC26491846C16800A33D0D /* MovieDetailsViewController.m in Sources */,
+				2B47DB9A188C03E0008A8E21 /* UIColor+CustomColors.m in Sources */,
 				2BBC26441846C12900A33D0D /* Appearance.m in Sources */,
 				2BBC26481846C16800A33D0D /* Movie.m in Sources */,
 				2B74AC2E1846BFD000497323 /* main.m in Sources */,

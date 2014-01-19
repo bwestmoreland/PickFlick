@@ -8,51 +8,38 @@
 
 #import "Appearance.h"
 #import "UILabel+AppearanceProxy.h"
+#import "UIColor+CustomColors.h"
 
 @implementation Appearance
 
 + (void)setAppearance
 {
-    [[UILabel appearance] setTextAttributes: @{NSForegroundColorAttributeName: [Appearance darkBlueColor]}];
+    [[UILabel appearance] setTextAttributes: @{NSForegroundColorAttributeName: [UIColor darkBlueColor]}];
     
-    [[UINavigationBar appearance] setBarTintColor: [Appearance darkBlueColor]];
-    [[UINavigationBar appearance] setTintColor: [Appearance whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes: @{ NSForegroundColorAttributeName : [Appearance whiteColor],
+    [[UINavigationBar appearance] setBarTintColor: [UIColor darkBlueColor]];
+    [[UINavigationBar appearance] setTintColor: [UIColor creamColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes: @{ NSForegroundColorAttributeName : [UIColor creamColor],
                                                              NSFontAttributeName: [Appearance marketDeco]}];
     
-    [[UIBarButtonItem appearance] setTintColor: [Appearance whiteColor]];
-    [[UIBarButtonItem appearance] setTitleTextAttributes: @{ NSForegroundColorAttributeName : [Appearance whiteColor],
+    [[UIBarButtonItem appearance] setTintColor: [UIColor creamColor]];
+    [[UIBarButtonItem appearance] setTitleTextAttributes: @{ NSForegroundColorAttributeName : [UIColor creamColor],
                                                              NSFontAttributeName: [Appearance belleroseLight] }
                                                 forState: UIControlStateNormal];
     
-    [[UISegmentedControl appearance] setTintColor: [Appearance darkBlueColor]];
-    [[UISegmentedControl appearance] setBackgroundColor: [Appearance whiteColor]];
-    [[UISegmentedControl appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [Appearance darkBlueColor]}
+    [[UISegmentedControl appearance] setTintColor: [UIColor darkBlueColor]];
+    [[UISegmentedControl appearance] setBackgroundColor: [UIColor creamColor]];
+    [[UISegmentedControl appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor darkBlueColor]}
                                                    forState: UIControlStateNormal];
     
-    [[UIToolbar appearance] setBarTintColor: [Appearance whiteColor]];
+    [[UIToolbar appearance] setBarTintColor: [UIColor creamColor]];
     [[UIToolbar appearance] setShadowImage: [UIImage imageNamed:@"ToolbarShadow"] forToolbarPosition:UIBarPositionTop];
     
-    [[UIButton appearance] setBackgroundColor: [Appearance darkBlueColor]];
-    [[UIButton appearance] setTitleColor: [Appearance whiteColor] forState: UIControlStateNormal];
+    [[UIButton appearance] setBackgroundColor: [UIColor darkBlueColor]];
+    [[UIButton appearance] setTitleColor: [UIColor creamColor] forState: UIControlStateNormal];
     
 }
 
-+ (UIColor *)darkBlueColor
-{
-    return [UIColor colorWithRed: 46 / 255.0f
-                           green: 101 / 255.0f
-                            blue: 142 / 255.0f
-                           alpha: 1.0];
-}
 
-+ (UIColor *)whiteColor
-{
-    return [UIColor colorWithRed: 241 / 255.0f
-                           green: 242 / 255.0f
-                            blue: 226 / 255.0f
-                           alpha: 1.0f];
-}
 
 + (UIFont *)marketDeco
 {

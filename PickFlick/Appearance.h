@@ -15,7 +15,6 @@
 
 + (UIFont *)marketDeco;
 + (UIFont *)belleroseLight;
-+ (UIColor *)darkBlueColor;
-+ (UIColor *)whiteColor;
+
 
 @end

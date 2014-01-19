@@ -8,8 +8,8 @@
 
 #import "ChooseMovieViewController.h"
 #import "MovieDetailsViewController.h"
+#import "UIColor+CustomColors.h"
 #import "Movie.h"
-#import "Appearance.h"
 #import "UIAlertView+SimpleAlert.h"
 
 @interface ChooseMovieViewController()
@@ -72,7 +72,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.collectionView.backgroundColor = [Appearance whiteColor];
+    self.collectionView.backgroundColor = [UIColor creamColor];
     [self.collectionView registerClass: [UICollectionViewCell class]
             forCellWithReuseIdentifier: @"UICollectionViewCell"];
     
